@@ -1,0 +1,385 @@
+.experience {
+  width: 100%;
+  height: calc((100vh * 2) + 74px);
+  background-color: rgb(38, 38, 38);
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 150px;
+}
+
+.experience-wrapper {
+  position: relative;
+}
+
+hr {
+  width: 50%;
+  opacity: 55%;
+}
+.experience-open {
+  color: gray;
+}
+
+.experience-tag {
+  color: rgb(0, 122, 204);
+}
+.experience-section-open {
+  position: absolute;
+  top: -80px;
+  left: 150px;
+  font-size: 22px;
+}
+
+.experience-section-close {
+  position: absolute;
+  bottom: -100px;
+  left: 150px;
+  font-size: 22px;
+}
+
+.exp-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.exp-images-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 500px;
+  margin-left: 50px;
+}
+
+.amazon-phone {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.amazon-pc {
+  transition: all 0.5s ease-in-out;
+}
+
+.amazon-pc:hover {
+  transform: scale(115%);
+}
+
+.amazon-phone:hover {
+  transform: scale(115%);
+}
+
+.exp-text-wrapper {
+  width: 500px;
+  transform: translateX(-100px);
+  color: rgb(225, 225, 225);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exp-text-h1 {
+  font-size: 55px;
+}
+
+.exp-text-h1 > a {
+  text-decoration: none;
+  color: rgb(225, 225, 225);
+  transition: all 0.5s ease-in-out;
+}
+.exp-text-h1 > a:hover {
+  color: #f7ca26;
+}
+
+.exp-links {
+  text-decoration: none;
+  color: #f7ca26;
+  transition: all 0.5s ease-in-out;
+}
+
+.exp-links:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.exp-section {
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+}
+
+/* xs */
+@media only screen and (max-width: 640px) {
+  .experience {
+    width: 100%;
+    height: calc((100vh * 3) + 74px);
+  }
+  .exp-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exp-images-wrapper {
+    display: flex;
+    position: unset;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .amazon-pc-wrapper {
+    position: relative;
+  }
+  .amazon-pc {
+    width: 250px;
+  }
+  .amazon-phone {
+    width: 70px;
+    right: 0;
+    bottom: 0px;
+  }
+  .amazon-pc:hover {
+    transform: scale(130%);
+  }
+
+  .amazon-phone:hover {
+    transform: scale(130%);
+  }
+  .experience-wrapper {
+    margin-top: 170px;
+  }
+  .experience-section-open {
+    position: absolute;
+    top: -80px;
+    left: 0px;
+    font-size: 0.9em;
+  }
+  .experience-section-close {
+    position: absolute;
+    bottom: -100px;
+    left: 0px;
+    font-size: 0.9em;
+  }
+
+  .exp-text-wrapper {
+    width: 100%;
+    transform: translateX(0px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .exp-text-h1 > a {
+    font-size: 0.5em;
+  }
+  .exp-text-wrapper p {
+    width: 80%;
+  }
+}
+/* sm */
+@media only screen and (min-width: 640px) {
+  .experience {
+    width: 100%;
+    height: 100%;
+  }
+  .exp-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exp-images-wrapper {
+    display: flex;
+    position: unset;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .amazon-pc-wrapper {
+    position: relative;
+  }
+  .amazon-pc {
+    width: 250px;
+  }
+  .amazon-phone {
+    width: 70px;
+    right: 0;
+    bottom: 0px;
+  }
+  .amazon-pc:hover {
+    transform: scale(130%);
+  }
+
+  .amazon-phone:hover {
+    transform: scale(130%);
+  }
+  .experience-wrapper {
+    margin-top: 170px;
+  }
+  .experience-section-open {
+    position: absolute;
+    top: -80px;
+    left: 0px;
+    font-size: 0.9em;
+  }
+  .experience-section-close {
+    position: absolute;
+    bottom: -100px;
+    left: 0px;
+    font-size: 0.9em;
+  }
+
+  .exp-text-wrapper {
+    width: 100%;
+    transform: translateX(0px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .exp-text-h1 > a {
+    font-size: 0.7em;
+  }
+  .exp-text-wrapper p {
+    width: 80%;
+  }
+}
+/* md */
+@media only screen and (min-width: 768px) {
+  .exp-wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+  }
+  .exp-images-wrapper {
+    display: flex;
+    position: unset;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .amazon-pc-wrapper {
+    position: relative;
+  }
+  .amazon-pc {
+    width: 250px;
+  }
+  .amazon-phone {
+    width: 70px;
+    right: 0;
+    bottom: 75px;
+  }
+  .amazon-pc:hover {
+    transform: scale(130%);
+  }
+
+  .amazon-phone:hover {
+    transform: scale(130%);
+  }
+  .experience-wrapper {
+    margin-top: 170px;
+  }
+  .experience-section-open {
+    position: absolute;
+    top: -80px;
+    left: 50px;
+    font-size: 0.9em;
+  }
+  .experience-section-close {
+    position: absolute;
+    bottom: -100px;
+    left: 50px;
+    font-size: 0.9em;
+  }
+
+  .exp-text-wrapper {
+    width: 100%;
+    transform: translatey(-70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .exp-text-h1 > a {
+    font-size: 0.5em;
+  }
+  .exp-text-wrapper p {
+    width: 80%;
+    font-size: 0.9em;
+  }
+}
+
+/* lg */
+@media only screen and (min-width: 1024px) {
+  .experience {
+    height: calc((100vh * 2) + 74px);
+  }
+  .exp-wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+  }
+  .exp-images-wrapper {
+    display: flex;
+    position: unset;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .amazon-pc-wrapper {
+    position: relative;
+  }
+  .amazon-pc {
+    width: 450px;
+  }
+  .amazon-phone {
+    width: 150px;
+    right: -25px;
+    bottom: 0px;
+  }
+  .amazon-pc:hover {
+    transform: scale(130%);
+  }
+
+  .amazon-phone:hover {
+    transform: scale(130%);
+  }
+  .experience-wrapper {
+    margin-top: 170px;
+  }
+  .experience-section-open {
+    position: absolute;
+    top: -80px;
+    left: 180px;
+    font-size: 1em;
+  }
+  .experience-section-close {
+    position: absolute;
+    bottom: -100px;
+    left: 180px;
+    font-size: 1em;
+  }
+
+  .exp-text-wrapper {
+    width: 100%;
+    transform: translateY(-40px) translateX(-50px);
+    display: flex;
+    align-items: center;
+  }
+
+  .exp-text-h1 > a {
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
+  }
+  .exp-text-h1 {
+    display: flex;
+    justify-content: start;
+  }
+  .exp-text-wrapper p {
+    width: 70%;
+    font-size: 0.9em;
+  }
+}
+
+/* xl */
+@media only screen and (min-width: 1280px) {
+}

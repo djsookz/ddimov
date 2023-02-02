@@ -1,0 +1,68 @@
+#scroll-top {
+  position: fixed;
+  bottom: 40px;
+
+  right: 70px;
+}
+
+#scroll-top-icon {
+  cursor: pointer;
+  font-size: 45px;
+  color: white;
+}
+@media only screen and (max-width: 640px) {
+  #scroll-top {
+    position: fixed;
+    bottom: 20px;
+
+    right: 15px;
+  }
+  #scroll-top-icon {
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  #scroll-top {
+    position: fixed;
+    bottom: 20px;
+
+    right: 15px;
+  }
+  #scroll-top-icon {
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #scroll-top {
+    position: fixed;
+    bottom: 20px;
+
+    right: 25px;
+  }
+  #scroll-top-icon {
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #scroll-top {
+    position: fixed;
+    bottom: 30px;
+
+    right: 40px;
+  }
+
+  #scroll-top-icon {
+    cursor: pointer;
+    font-size: 45px;
+    color: white;
+  }
+}

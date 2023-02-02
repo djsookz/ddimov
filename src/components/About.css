@@ -1,0 +1,248 @@
+.about {
+  height: 100vh;
+  background-color: rgb(38, 38, 38);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.about-image-wrapper {
+  position: relative;
+}
+
+.about-image-border1 {
+  position: absolute;
+  width: 2px;
+  height: 140px;
+  background-color: orange;
+  left: -50px;
+  top: -50px;
+}
+.about-image-border2 {
+  position: absolute;
+  width: 90px;
+  height: 2px;
+  background-color: orange;
+  left: -50px;
+  top: -50px;
+}
+.about-image-border3 {
+  position: absolute;
+  width: 2px;
+  height: 140px;
+  background-color: orange;
+  right: -50px;
+  bottom: -50px;
+}
+.about-image-border4 {
+  position: absolute;
+  width: 90px;
+  height: 2px;
+  background-color: orange;
+  right: -50px;
+  bottom: -50px;
+}
+
+.about-image {
+  object-fit: contain;
+  width: 350px;
+  box-shadow: 10px 5px 5px black;
+  transition: all 0.5s ease-in-out;
+}
+
+.about-image:hover {
+  transform: scale(120%);
+}
+
+.about-aboutme {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about-aboutme h1 {
+  font-size: 55px;
+  color: rgb(223, 223, 223);
+}
+
+.about-aboutme p {
+  font-size: 18px;
+  color: rgb(223, 223, 223);
+}
+
+.about-aboutme p a {
+  color: #f7ca26;
+  text-decoration: none;
+}
+
+.about-aboutme p a:hover {
+  border-bottom: 1px solid #f7ca26;
+}
+
+.about-open {
+  color: gray;
+}
+
+.about-tag {
+  color: rgb(0, 122, 204);
+}
+.about-section-open {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  font-size: 22px;
+}
+
+.about-section-close {
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+  font-size: 22px;
+}
+
+/* xs */
+@media only screen and (max-width: 640px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-image-wrapper {
+    width: 180px;
+    height: 220px;
+  }
+  .about-image {
+    width: 200px;
+  }
+
+  .about-image-border1 {
+    position: absolute;
+    width: 2px;
+    height: 140px;
+    background-color: orange;
+    left: -25px;
+    top: -25px;
+  }
+  .about-image-border2 {
+    position: absolute;
+    width: 90px;
+    height: 2px;
+    background-color: orange;
+    left: -25px;
+    top: -25px;
+  }
+
+  .about-aboutme {
+    padding-top: 150px;
+  }
+  .about-section-open {
+    top: 80px;
+    font-size: 0.9em;
+  }
+  .about-section-close {
+    font-size: 0.9em;
+  }
+
+  .about-aboutme h1 {
+    font-size: 1.5em;
+  }
+  .about-aboutme p {
+    width: 80%;
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
+/* sm */
+@media only screen and (min-width: 640px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-image {
+    width: 250px;
+  }
+  .about-aboutme {
+    padding-top: 150px;
+  }
+  .about-section-open {
+    top: 80px;
+    font-size: 1.1em;
+  }
+  .about-section-close {
+    font-size: 1.1em;
+  }
+
+  .about-aboutme h1 {
+    font-size: 1.7em;
+  }
+  .about-aboutme p {
+    font-size: 1.1em;
+    text-align: center;
+  }
+}
+/* md */
+@media only screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    position: relative;
+  }
+  .about-aboutme {
+    padding-top: 0;
+    width: 40%;
+    height: 200px;
+  }
+  .about-section-open {
+    top: -80px;
+  }
+  .about-aboutme h1 {
+    font-size: 1.5em;
+  }
+  .about-aboutme p {
+    width: 65%;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  .about-section-open {
+    font-size: 0.9em;
+  }
+  .about-section-close {
+    font-size: 0.9em;
+  }
+  .about-image {
+    width: 220px;
+  }
+}
+
+/* lg */
+@media only screen and (min-width: 1024px) {
+  .about-aboutme h1 {
+    font-size: 1.9em;
+  }
+  .about-aboutme p {
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+  }
+  .about-section-open {
+    font-size: 1em;
+  }
+  .about-section-close {
+    font-size: 1em;
+  }
+
+  .about-image {
+    width: 320px;
+  }
+}
+
+/* xl */
+@media only screen and (min-width: 1280px) {
+}

@@ -1,0 +1,65 @@
+#ham-menu {
+  width: 28px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s ease-in;
+}
+
+.ham-row1 {
+  width: 25px;
+  height: 2px;
+  background-color: red;
+  margin-top: 3px;
+  transition: all 0.5s linear;
+}
+.ham-row2 {
+  width: 25px;
+  height: 2px;
+  background-color: red;
+  margin-top: 3px;
+}
+.ham-row3 {
+  width: 25px;
+  height: 2px;
+  background-color: red;
+  margin-top: 3px;
+}
+
+@keyframes animationHam {
+  0% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.hell {
+  transform: rotate(45deg);
+  transition: all 1s ease-in-out;
+}
+
+@keyframes opacityHam {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.hell .ham-row1 {
+  transform: translateY(5px);
+  animation: opacityHam 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.hell .ham-row3 {
+  transform: rotate(-90deg) translateY(-1px) translateX(3.5px);
+}
