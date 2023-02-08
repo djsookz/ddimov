@@ -1,6 +1,6 @@
 .experience {
   width: 100%;
-  height: calc((100vh * 2) + 74px);
+
   background-color: rgb(38, 38, 38);
   display: flex;
   flex-direction: column;
@@ -112,7 +112,7 @@ hr {
 @media only screen and (max-width: 640px) {
   .experience {
     width: 100%;
-    height: calc((100vh * 3) + 74px);
+    height: 1750px;
   }
   .exp-wrapper {
     display: flex;
@@ -178,7 +178,7 @@ hr {
 @media only screen and (min-width: 640px) {
   .experience {
     width: 100%;
-    height: calc((100vh * 2) + 374px);
+    height: 1700px;
   }
   .exp-wrapper {
     display: flex;
@@ -242,6 +242,10 @@ hr {
 }
 /* md */
 @media only screen and (min-width: 768px) {
+  .experience {
+    width: 100%;
+    height: 1500px;
+  }
   .exp-wrapper {
     width: 100%;
 
@@ -308,9 +312,6 @@ hr {
 
 /* lg */
 @media only screen and (min-width: 1024px) {
-  .experience {
-    height: calc((100vh * 2) + 74px);
-  }
   .exp-wrapper {
     width: 100%;
 

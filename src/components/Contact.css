@@ -67,6 +67,7 @@ h3 {
     margin-top: 25px;
     width: 100%;
     height: 70px;
+    padding: 0px 7px;
   }
 
   h2 {
@@ -81,5 +82,8 @@ h3 {
     padding-left: 10px;
     border-radius: 5px;
     width: 100%;
+  }
+  .contact_button {
+    margin-left: 10px;
   }
 }
