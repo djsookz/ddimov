@@ -38,7 +38,7 @@ const Begining = () => {
                 loop: true,
                 autoStart: true,
                 delay: 100,
-                deleteSpeed: 10,
+                deleteSpeed: 30,
                 wrapperClassName: "Wrapper",
               }}
               onInit={(typewriter) => {
