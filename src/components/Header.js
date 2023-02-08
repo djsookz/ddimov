@@ -8,24 +8,12 @@ import { Link } from "react-scroll/modules";
 import Test from "./Test";
 
 const Header = () => {
-  const [header, setHeader] = useState(true);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        setHeader(false);
-      } else {
-        setHeader(true);
-      }
-    });
-  }, []);
-
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className={header ? "header" : "headerOnScroll"}>
-      <div className={header ? "header_wrapper" : "header_wrapperOnScroll"}>
+    <div className="header">
+      <div className="header_wrapper">
         <Link to="home" spy={true} smooth={true} offset={-100} duration={800}>
           <img className="header_logo" src={Logo} alt="logo" width={70} />
         </Link>
@@ -58,10 +46,10 @@ const Header = () => {
             <li>
               <Link
                 className="header-link"
-                to="Contact"
+                to="contact"
                 spy={true}
                 smooth={true}
-                offset={-350}
+                offset={0}
                 duration={1500}
               >
                 Contact<span>()</span>

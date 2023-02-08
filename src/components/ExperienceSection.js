@@ -67,7 +67,7 @@ const ExperienceSection = () => {
           </p>
         </div>
       </section>
-      <hr />
+      <hr data-aos="fade-right" />
       <section className="exp-wrapper">
         <div
           data-aos="fade-up"

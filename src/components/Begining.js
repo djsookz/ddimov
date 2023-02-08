@@ -8,6 +8,8 @@ import Typewriter from "typewriter-effect";
 import About from "./About";
 import Experience from "./Experience";
 import Test2 from "./Test2";
+import Contact from "./Contact";
+import ScrollToTop from "./ScrollToTop";
 
 const hi = "Hi, my name is Dimo Dimov";
 
@@ -35,6 +37,8 @@ const Begining = () => {
               options={{
                 loop: true,
                 autoStart: true,
+                delay: 100,
+                deleteSpeed: 10,
                 wrapperClassName: "Wrapper",
               }}
               onInit={(typewriter) => {
@@ -105,6 +109,8 @@ const Begining = () => {
       </div>
       <About />
       <Experience />
+      <Contact />
+      <ScrollToTop />
     </div>
   );
 };
