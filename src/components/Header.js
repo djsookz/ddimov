@@ -34,6 +34,18 @@ const Header = () => {
             <li>
               <Link
                 className="header-link"
+                to="education"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+              >
+                Education<span>()</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="header-link"
                 to="experience"
                 spy={true}
                 smooth={true}

@@ -7,7 +7,7 @@
 
 #scroll-top-icon {
   cursor: pointer;
-  font-size: 45px;
+
   color: white;
 }
 @media only screen and (max-width: 640px) {
@@ -62,7 +62,7 @@
 
   #scroll-top-icon {
     cursor: pointer;
-    font-size: 45px;
+    font-size: 35px;
     color: white;
   }
 }

@@ -145,6 +145,7 @@
   }
   .about-section-close {
     font-size: 0.9em;
+    bottom: -20px;
   }
 
   .about-aboutme h1 {
